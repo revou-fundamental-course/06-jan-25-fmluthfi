@@ -1,0 +1,30 @@
+ody {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.container img {
+    margin-right: auto;
+}
+
+.container > div {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    border: 1px solid; 
+    border-radius: 5px;
+    border-left-width: px;
+    border-right-width: px;
+    background-color: aliceblue;
+
+}
