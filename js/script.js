@@ -1,2 +1,2 @@
 // ini adalah skkrip JS
-// ola
+// ola amigo
