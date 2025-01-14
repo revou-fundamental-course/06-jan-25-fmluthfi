@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Judul Web -->
+
+    <!-- Judul -->
+
     <head>
+
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>MyWebsite</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- Fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <!-- Icons -->
+
+        <script src="https://unpkg.com/feather-icons"></script>
+    
     </head>
 
-    <!-- header web -->
+     
      <body>
-        <header>
-            <div>
-                <div class="container">
-                    <div class="logo">
-                        <img src="C:\Users\Fathi Cardiana\Pictures\Saved Pictures\revou.png" style="width:40px;height:40px;">
+
+        <!-- Navbar -->
+
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">
+                <img src="C:\Users\Fathi Cardiana\Pictures\Saved Pictures\revou.png" alt="Logo" style="width:40px;height:40px;">
+            </a>
+            
+            <div class="navbar-nav">
+                <a href="#">Home</a>
+                <a href="about">Tentang Kami</a>
+                <a href="portofolio">Portofolio</a>
+                <a href="contact">Message Us</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Profile</a></li>
-                    <li><a href="#">Portofolio</a></li>
-                    <li><a href="#">Message Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div>
-                    <h1>Hi Guest, Welcome To Webiste!</h1>
-                    <p>This is the homepage of the website...</p>
+
+            <div class="navbar-extra">
+                <a href="#" id="search"><i data-feather="search"></i></a>
+                <a href="#" id="settings"><i data-feather="settings"></i></a>
             </div>
-        </main>
-        <footer>
-            <div>
-                    <p>Created By Fathi Cardiana 2025</p>
-            </div>
-        </footer>
+        </nav>
+
+        <!-- Icons Script -->
+
+        <script>
+            feather.replace();
+          </script>
+
      </body>
+
 </html>
