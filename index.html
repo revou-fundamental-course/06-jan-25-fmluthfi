@@ -29,7 +29,7 @@
 
         <!-- Navbar -->
 
-        <nav class="navbar navbar.scrolled">
+        <nav class="navbar">
             <a href="#" class="navbar-logo">lウフィ<span>カラディアナ</span></a>
             
             <div class="navbar-nav">
@@ -45,29 +45,33 @@
             </div>
         </nav>
 
-        <!-- Hero Sections -->
+        <!-- Homepage Section -->
 
         <section class="hero" id="home">
             <main class="content">
                 <h1>Hello, Welcome to My Website!</h1>
                 <p>Selamat datang di website saya. Ini adalah website pertama yang saya buat</p>
                 <p>Jadi masih agak berantakan dan belum sepenuhnya sempurna.</p>
-                <a href="#" class="cta">Mari Berkenalan</a>
+                <a href="#" class="action">Mari Berkenalan</a>
             </main>
         </section>
+
+        <!-- About Me Section -->
+
+        
 
         <!-- Icons Script -->
 
         <script>
             feather.replace();
-            window.addEventListener('scroll', function(){
-                const navbar = document.querySelector('navbar');
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.class.remove('scrolled');
-                }
-            });
+            window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 56) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
           </script>
 
      </body>
