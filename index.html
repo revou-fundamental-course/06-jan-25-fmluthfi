@@ -29,15 +29,13 @@
 
         <!-- Navbar -->
 
-        <nav class="navbar">
-            <a href="#" class="navbar-logo">
-                <img src="C:\Users\Fathi Cardiana\Pictures\Saved Pictures\revou.png" alt="Logo" style="width:40px;height:40px;">
-            </a>
+        <nav class="navbar navbar.scrolled">
+            <a href="#" class="navbar-logo">lウフィ<span>カラディアナ</span></a>
             
             <div class="navbar-nav">
-                <a href="#">Home</a>
-                <a href="about">Tentang Kami</a>
-                <a href="portofolio">Portofolio</a>
+                <a href="#home">Home</a>
+                <a href="about">About Me</a>
+                <a href="portofolio">Portfolio</a>
                 <a href="contact">Message Us</a>
             </div>
 
@@ -47,10 +45,29 @@
             </div>
         </nav>
 
+        <!-- Hero Sections -->
+
+        <section class="hero" id="home">
+            <main class="content">
+                <h1>Hello, Welcome to My Website!</h1>
+                <p>Selamat datang di website saya. Ini adalah website pertama yang saya buat</p>
+                <p>Jadi masih agak berantakan dan belum sepenuhnya sempurna.</p>
+                <a href="#" class="cta">Mari Berkenalan</a>
+            </main>
+        </section>
+
         <!-- Icons Script -->
 
         <script>
             feather.replace();
+            window.addEventListener('scroll', function(){
+                const navbar = document.querySelector('navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.class.remove('scrolled');
+                }
+            });
           </script>
 
      </body>
