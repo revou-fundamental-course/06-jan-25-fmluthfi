@@ -16,7 +16,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: #fff;
-    min-height: 2000px;
+    min-height: 3100px;
 }
 
 /* Navbar Design */
@@ -54,7 +54,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(243, 11, 11);
 }
 
 .navbar .navbar-nav a::after {
@@ -73,6 +73,10 @@ body {
 .navbar .navbar-extra a {
     color: #fff;
     margin: 0 0.5rem;
+}
+
+#menu {
+    display: none;
 }
 
 .navbar.scrolled { 
@@ -131,31 +135,95 @@ body {
 /* About Section Design */
 
 .about {
-    padding: 12rem 7% 1.4rem;
+    padding: 9rem 7% 1.4rem;
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.about h2, .portfolio h2 {
+    text-align: center;
+    font-size: 3rem;
     margin-bottom: 3rem;
 }
 
 .about .row {
     display: flex;
+    align-items: center;
+    text-align: left;
 }
 
 .about .row .about-img {
-    flex: 1 1 45rem;
+    flex: 1 1 0.5rem;
 }
 
 .about .row .about-img img {
     position: relative;
-    width: 32vw;
+    width: 15rem;
+    height: 21rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
+    border: 0.3rem solid #ffffff;
 }
 
 .about .row .content {
-    flex: 1 1 35rem;
-    padding: 0 1rem;
+    flex: 1 1 50rem;
+    padding-left: 2rem;
+    padding-right: 0;
+    margin-top: -7.5rem;
 }
 
+.about .row .content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 
+}
+
+.about .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+.about .row {
+    flex-wrap: wrap;
+}
+
+/* Portfolio Design */
+
+.portfolio {
+    padding: 17rem 7% 1.4rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio p {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+/* Message Us Section Design */
+
+.message-us {
+    padding: 20rem 7% 1.4rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.message-us p {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.4;
+}
 
 /* Redponsive Styles */
 
@@ -173,6 +241,55 @@ body {
     html {
         font-size: 62.5%;
     }
+
+    #menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #2d2b28;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: #fff;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .about .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .row .about-img {
+        margin-bottom: 2rem;
+    }
+
+    .about .row .content {
+        padding: 0;
+        margin-top: 0;
+    }
 }
 
 /* For Mobiles */
@@ -180,5 +297,25 @@ body {
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+
+    .about .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .row .about-img img {
+        width: 12rem; 
+        height: auto;
+    }
+
+    .about .row .content h3 {
+        font-size: 1.5rem; 
+    }
+
+    .about .row .content p {
+        font-size: 1rem;
+        line-height: 1.4;
     }
 }

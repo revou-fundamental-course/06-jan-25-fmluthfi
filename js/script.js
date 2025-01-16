@@ -1,2 +1,16 @@
-// ini adalah skkrip JS
-// ola amigo
+// Menu Script
+
+const navbarNav = document.querySelector ('.navbar-nav');
+// when clicked
+document.querySelector('#menu').onclick = () => {
+    navbarNav.classList.toggle('active');
+};
+
+// close menu Script
+const menu = document.querySelector('#menu');
+
+document.addEventListener('click', function(e) {
+    if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
+        navbarNav.classList.remove('active');
+    }
+});
